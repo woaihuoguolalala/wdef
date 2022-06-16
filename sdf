@@ -9,6 +9,40 @@ struct Account
 	
 	struct Account *next;
 };
+struct Account
+{
+	char username[100];
+	char password[100];
+	float money;
+	
+	struct Account * next;
+};
+typedef struct Account Account;
+
+Account * head=NULL;
+Account * tail=NULL;
+Account * curAccount=NULL;//记录当前账户 
+Account * otherAccount=NULL;//记录对方账户 
+
+struct TransactionRecord
+{
+	char username[100];
+	time_t timestamp;//时间戳 
+	int type;//交易类型 0-取钱，1-存钱
+	float amount;//数额 
+	
+	struct TransactionRecord * next; 
+}; 
+typedef struct TransactionRecord TR;
+
+TR * trHead=NULL;
+TR * trTail=NULL; 
+
+void drawMoney()
+{
+	printf("请输入取款金额：");
+	int money;
+	scanf("%d",&money);
 typedef struct Account Account;
 
 Account *head=NULL;//指向头结点 
