@@ -1,6 +1,6 @@
-#include<stdio.h>
-#include<string.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 #include <windows.h>
 #define NUM 1001
 void denglu();
@@ -68,7 +68,7 @@ void enter3()//一级菜单函数
 	system("cls");
 	printf(" \t\t\t             ATM analog system\n");
 	printf(" \t\t\t  ***************************************\n");
-	printf("\t\t\t  |Reconstrucys Bank of China welcomes you|\n");
+	printf("\t\t\t  |Agricultural Bank of China welcomes you|\n");
 	printf(" \t\t\t  ***************************************\n");
 	printf("\n\n");
 	printf("\t\t\t  *****You have the following options*****\n");
@@ -423,28 +423,19 @@ void shezhi2()
 }
 
 
-
-
-
-
-
-
-
-
-
 //中文代码区 
 void enter()//一级菜单函数
 {
 	int a;
 	load();
 	system("cls");
-	printf("\t\t\t  |欢迎使用中国农业银行|\n");
+	printf("\t\t\t  |欢迎使用中国建设银行|\n");
 	printf(" \t\t\t  ********************\n");
 	printf("\n\n");
 	printf(" \t\t\t  ====================\n");
-	printf(" \t\t\t  *      1.注册      *\n");
-	printf(" \t\t\t  *      2.登录      *\n");
-	printf(" \t\t\t  +      3.退出      +\n");
+	printf(" \t\t\t        1.注册      \n");
+	printf(" \t\t\t        2.登录      \n");
+	printf(" \t\t\t        3.退出      \n");
 	printf(" \t\t\t  ====================\n");
 	printf("\n\n");
 	printf(" \t\t\t   |请输入您的操作号| \n\n\t\t\t\t  ");
@@ -527,10 +518,8 @@ void shezhi()
 }
 void tuichu()
 {
-	printf("\t\t\t**********谢谢**********\n");
-	printf("\t\t\t******感谢您的使用******\n");
-	printf("\t\t\t******欢迎下次光临******\n");
-	printf("\t\t\t**********再见**********\n");
+	printf("\t\t\t           谢谢         n");
+	printf("\t\t\t        感谢您的使用        \n");
 	exit(0);
 }
 void denglu()
@@ -597,17 +586,17 @@ void enter2()
 	do
 	{
 		printf("\n\n\n");
-		printf(" \t\t\t+++++++++++++++++++++++++++++\n");
+		printf(" \t\t\t                                 \n");
 		printf(" \t\t\t+  A T M 系 统 个 人 界 面  +\n");
-		printf(" \t\t\t+++++++++++++++++++++++++++++\n");
-		printf(" \t\t\t    ++++++++++++++++++++\n");
+		printf(" \t\t\t                             \n");
+		printf(" \t\t\t    -----------------------\n");
 		printf(" \t\t\t    #     1.  查询     #\n");
 		printf(" \t\t\t    #     2.  取款     #\n");
 		printf(" \t\t\t    #     3.  转账     #\n");
 		printf(" \t\t\t    #     4.  存款     #\n");
 		printf(" \t\t\t    #     5.修改密码   #\n");
-		printf(" \t\t\t    #     6.返回目录   #\n");
-		printf(" \t\t\t    ++++++++++++++++++++\n\n\t\t\t\t  ");
+		printf(" \t\t\t    #     6.  返回   #\n");
+		printf(" \t\t\t  ---------------------------\n\n\t\t\t\t  ");
 		scanf("%d", &n);
 		switch (n)
 		{
@@ -659,16 +648,14 @@ void qukuan()
 	int i, x;
 	char a, ch;
 
-	printf(" \t\t\t+++++++++++++++++++++++++++++++\n");
-	printf(" \t\t\t+  本银行最低取款金额为100元  +\n");
+	printf(" \t\t\t-----------------------------------\n");
 	printf(" \t\t\t+       您卡号的余额为        +\n");
 	printf(" \t\t\t+       %d元                  +\n", user[k].account);
 	printf(" \t\t\t+    请选择你要提取的金额:    +\n");
-	printf(" \t\t\t+    1: 100元     2:200元     +\n");
-	printf(" \t\t\t+    3.500元      4:1000元    +\n");
-	printf(" \t\t\t+    5:2000元     6:5000元    +\n");
+	printf(" \t\t\t+    1: 100元     2:200元      3：500元     +\n");
+	printf(" \t\t\t+    4：1000元    5:2000元     6:5000元    +\n");
 	printf(" \t\t\t+        7: 自定义金额        +\n");
-	printf(" \t\t\t+++++++++++++++++++++++++++++++\n\n\t\t\t\t      \n");
+	printf(" \t\t\t-----------------------------------\n\n\t\t\t\t      \n");
 	printf(" \t\t\t******返回上一步请按回车键*****\n");
 	scanf("%d", &i);
 	if (i == 1)
